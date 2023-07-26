@@ -55,7 +55,7 @@ if (isset($content["message"]) && !isset($content["message"]["successful_payment
         "unknown"
     ];
 
-    $hook = new Bot(['bot_token' => TELEGRAM_BOT_TOKEN, 'only_trusted' => TELEGRAM_BOT_ONLY_TRUSTED, 'trusted' => TELEGRAM_BOT_TRUSTED], "");
+    $hook = new Bot(['bot_token' => TELEGRAM_BOT_TOKEN, 'only_trusted' => TELEGRAM_BOT_ONLY_TRUSTED, 'trusted' => TELEGRAM_BOT_TRUSTED], $chat_id);
     if (!$hook->isTrusted()) {
         $hook->unauthorized();
         die();
@@ -77,7 +77,7 @@ if (isset($content["message"]) && !isset($content["message"]["successful_payment
         "order_info" => $content["message"]["successful_payment"]["order_info"] ?? "",
     ];
 
-    $hook = new Bot(['bot_token' => TELEGRAM_BOT_TOKEN, 'only_trusted' => TELEGRAM_BOT_ONLY_TRUSTED, 'trusted' => TELEGRAM_BOT_TRUSTED], "");
+    $hook = new Bot(['bot_token' => TELEGRAM_BOT_TOKEN, 'only_trusted' => TELEGRAM_BOT_ONLY_TRUSTED, 'trusted' => TELEGRAM_BOT_TRUSTED], $chat_id);
     if (!$hook->isTrusted()) {
         $hook->unauthorized();
         die();

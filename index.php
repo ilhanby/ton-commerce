@@ -162,7 +162,7 @@ $product_detail_banner = [
 </div>
 
 <div class="modal fade" id="popup_ton_info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
-     style="z-index:9999999;">
+     style="z-index:9999;">
     <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
             <div class="modal-header website-topbar px-3 py-2">
