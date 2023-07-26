@@ -30,7 +30,7 @@ You can try the project on https://t.me/ton_commerce_bot
 
 * A new bot should be installed via Telegram @Botfather and the required information should be filled in the bot.
 
-* Telegram Webhook set: https://api.telegram.org/bot<TOKEN>/setwebhook?url=<URL>
+* Telegram Webhook set: https://api.telegram.org/bot{TOKEN}/setwebhook?url={URL}
 
 * The API Token on the bot you set up should be taken and added to /config.php (TELEGRAM_BOT_TOKEN).
 
